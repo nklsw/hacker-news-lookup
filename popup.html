@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hacker News Lookup</title>
+  <style>
+    body {
+      width: 350px;
+      padding: 8px;
+      font-family: Verdana, Geneva, sans-serif;
+      font-size: 10pt;
+      background-color: #f6f6ef;
+      margin: 0;
+    }
+    
+    .header {
+      background-color: #ff6600;
+      padding: 2px 4px;
+      margin: -8px -8px 8px -8px;
+      color: #000;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+    }
+    
+    .header img {
+      width: 16px;
+      height: 16px;
+      margin-right: 4px;
+    }
+    
+    .hn-link {
+      margin: 5px 0 10px 0;
+      padding: 4px;
+      line-height: 1.4;
+    }
+    
+    .hn-link a {
+      color: #000;
+      text-decoration: none;
+    }
+    
+    .hn-link a:visited {
+      color: #828282;
+    }
+    
+    .hn-link a:hover {
+      text-decoration: underline;
+    }
+    
+    .subtext {
+      color: #828282;
+      font-size: 8.5pt;
+      margin-top: 3px;
+    }
+    
+    .subtext a {
+      color: #828282;
+      text-decoration: none;
+    }
+    
+    .subtext a:hover {
+      text-decoration: underline;
+    }
+    
+    .loading {
+      color: #828282;
+      text-align: center;
+      padding: 20px;
+    }
+    
+    .error {
+      color: #828282;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="icons/icon16.png" alt="HN"> Hacker News Posts
+  </div>
+  <div id="content">
+    <div class="loading">Searching for Hacker News links...</div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
